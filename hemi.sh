@@ -32,11 +32,11 @@ ARCH=$(uname -m)
 case "$ARCH" in
     x86_64)
         log "INFO" "Detected x86_64 architecture. Downloading Hemi Network Binary..."
-        wget https://github.com/hemilabs/heminetwork/releases/download/v0.11.1/heminetwork_v0.11.1_linux_amd64.tar.gz -O heminetwork.tar.gz
+        wget https://github.com/hemilabs/heminetwork/releases/download/v0.11.5/heminetwork_v0.11.5_linux_amd64.tar.gz -O heminetwork.tar.gz
         ;;
     aarch64)
         log "INFO" "Detected arm64 architecture. Downloading Hemi Network Binary..."
-        wget https://github.com/hemilabs/heminetwork/releases/download/v0.11.1/heminetwork_v0.11.1_linux_arm64.tar.gz -O heminetwork.tar.gz
+        wget https://github.com/hemilabs/heminetwork/releases/download/v0.11.5/heminetwork_v0.11.5_linux_arm64.tar.gz -O heminetwork.tar.gz
         ;;
     *)
         log "ERROR" "Unsupported architecture: $ARCH. Exiting..."
